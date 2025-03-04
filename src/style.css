@@ -4,15 +4,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Marck Script", serif;
+    font-size: large;
 }
 
 .header{
     text-align: center;
+    
 }
 
 .main{
-    height: 100vh;
-    /* background-color: #FCD96B */
+    height: 100%;
     background-image: linear-gradient(#FCD96B,#E4B319);
     display: flex;
     flex-direction: column;
@@ -20,9 +21,36 @@
 
     & .cardMain{
         background-color: #FFF1C3;
-        height: 600px;
-        width: 550px;
-        /* align-items: center; */
+        height: 420px;
+        width: 370px;
         text-align: center;
+        border-radius: 5px;
+        margin-top: 30px;
+
+        & .img{
+            filter: drop-shadow(6px 6px 5px #0000008c);
+        }
     }
+
+    & .timerContainer{
+        margin-top: 20px;
+    }
+    
+    & .spotfy{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 370px;
+        height: 120px;
+    }
+
+    & .textArea{
+        background-color: #FFF1C3;
+        width: 370px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    
 }
